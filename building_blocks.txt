@@ -1,0 +1,32 @@
+# Services
+services = [epipe, vpls, vprn]
+
+# VPRN
+vprn = {
+  'svcID': '',
+  'description': '',
+  'service-name': '',
+  'interfaces': {interface},
+  'spoke-sdp': [],
+  'shutdown': True
+}
+
+# Interface
+interface = {
+  'interface_name': '',
+  'description': '',
+  'address': '',
+  'sap': {sap},
+  'vpls': vpls,
+  'spoke-sdp': ''
+}
+
+# Sap
+sap = {
+  'sap-id': {
+      'description': '',
+      'shutdown': False,
+      'qos': '',
+      'vlan': '',
+      'port': ''
+  },
